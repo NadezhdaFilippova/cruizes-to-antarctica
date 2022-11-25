@@ -12,10 +12,43 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Montserrat", "Arial", sans-serif;
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/montserratregular.woff2") format("woff2"),
+    url("../fonts/montserratregular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  font-display: swap;
+  src:
+    url("../fonts/montserratmedium.woff2") format("woff2"),
+    url("../fonts/montserratmedium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  font-display: swap;
+  src:
+    url("../fonts/montserratsemibold.woff2") format("woff2"),
+    url("../fonts/montserratsemibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat", "Arial", sans-serif;
+
+  font-display: swap;
+  src:
+    url("../fonts/montserratbold.woff2") format("woff2"),
+    url("../fonts/montserratbold.woff") format("woff");
 }
