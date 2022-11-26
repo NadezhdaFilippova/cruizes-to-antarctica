@@ -1,0 +1,47 @@
+.intro h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+
+  @include vp-1023 {
+    margin-bottom: 29px;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.intro p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+
+.intro__wrapper {
+  padding: 283px 13.2%;
+
+  @include vp-1023 {
+    padding: 280px 6%;
+  }
+
+  @include vp-767 {
+    padding: 185px 2.7%;
+  }
+}

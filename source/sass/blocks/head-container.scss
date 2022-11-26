@@ -1,0 +1,13 @@
+.head-container {
+  color: $color-alice-blue;
+  background-color: $color-tangaroa;
+  background-image: url("../img/main-back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    background-image: url("../img/main-back-tablet.jpg");
+  }
+}

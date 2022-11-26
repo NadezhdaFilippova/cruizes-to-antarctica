@@ -57,13 +57,13 @@
 }
 
 @mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
+  @media (max-width: ($vp-1024 - 0.5px)) {
     @content;
   }
 }
 
 @mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
+  @media (max-width: ($vp-768 - 0.5px)) {
     @content;
   }
 }

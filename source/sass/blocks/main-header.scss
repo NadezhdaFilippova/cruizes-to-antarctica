@@ -1,0 +1,128 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 85%;
+
+  @include vp-1023 {
+    width: 88.3%;
+  }
+
+  @include vp-767 {
+    width: 90.6%;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  padding: 32px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 25px 0;
+  }
+
+  @include vp-1023 {
+    padding: 20px 0;
+  }
+}
+
+.main-header__logo svg {
+  display: block;
+  fill: $color-alice-blue;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+}
+
+@include vp-767 {
+  .main-header--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-alice-blue;
+    box-shadow: 0 5px 0 0 $color-alice-blue, 0 10px 0 0 $color-alice-blue;
+  }
+
+  .main-header--closed .main-nav__item {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  .main-header--opened .main-nav__toggle {
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    right: 5px;
+  }
+
+  .main-header--opened .main-nav__toggle::before,
+  .main-header--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 15px;
+    height: 2px;
+    z-index: 2;
+    background-color: $color-tangaroa;
+  }
+
+  .main-header--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .main-header--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  .main-header--opened .main-nav__wrapper {
+    position: absolute;
+    padding: 60px 40px 60px 2vw;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 89vw;
+    min-height: 568px;
+    background-color: $color-alice-blue;
+  }
+
+  .main-header--opened .main-header__logo {
+    z-index: 12;
+    margin-left: 10vw;
+
+    svg {
+      fill: $color-tangaroa;
+    }
+  }
+
+  .main-header--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-header--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-header--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-header--opened .intro__wrapper {
+    padding-left: 10vw;
+  }
+}

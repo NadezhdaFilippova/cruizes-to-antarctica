@@ -16,48 +16,59 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="main-header container">
-        <div class="main-header__wrapper">
-          <a class="main-header__logo">
-            <img src="img/svg/logo.svg" width="70" height="38" alt="Логотип в виде айсбергов.">
-          </a>
-          <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
-            </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#">Преимущесва</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Направления</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Ближайшие круизы</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+    <div class="head-container main-header--closed main-header--nojs">
+      <header>
+        <div class="main-header">
+          <div class="main-header__container">
+            <div class="main-header__wrapper">
+              <a class="main-header__logo">
+                <svg width="70" height="38" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <nav class="main-header__nav main-nav ">
+                <button class="main-nav__toggle" type="button">
+                  <span class="visually-hidden">Открыть меню.</span>
+                </button>
+                <div class="main-nav__wrapper">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                      <a href="#">Преимущества</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#">Направления</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#">Ближайшие круизы</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="">
+      </header>
+      <section class="intro ">
         <div class="intro__container container">
-          <h1>Круизы в Антарктику</h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+          <div class="intro__wrapper">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          </div>
         </div>
       </section>
+    </div>
+    <main>
+
       <section class="preamble">
         <div class="preamble__container container">
           <div class="preamble__wrapper">
-            <h2>Путешествие на край Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
-              лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
-              китов, морских котиков и многое другое.</p>
+            <div class="preamble__text-wrapper">
+              <h2>Путешествие на край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
             <div class="preamble__img-wrapper">
               <picture>
                 <source type="image/webp" srcset="img/pinguins.webp 1x, img/pinguins@2x.webp 2x">
@@ -68,7 +79,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <!-- <section class="advantages">
         <div class="advantages__container container">
           <h2>Преимущесва</h2>
           <ul class="advantages__list">
@@ -319,14 +330,14 @@
             <div class="contacts__block">
               <p>У вас ещё остались вопросы или сомнения?
                 Приезжайте к нам в офис и мы вам все расскажем.</p>
-                <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
-                <a class="contacts__tel" href="tel:88002000000">8-800-200-00-00</a>
+              <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+              <a class="contacts__tel" href="tel:88002000000">8-800-200-00-00</a>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <div class="main-footer container">
         <div class="main-footer__wrapper">
           <a class="main-footer__logo">
@@ -350,36 +361,36 @@
           </nav>
           <div class="main-footer__social social">
             <h3 class="visually-hidden">Социальные сети.</h3>
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <span class="visually-hidden">Мы в Одноклассниках.</span>
-                      <svg width="12" height="20" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite.svg#ok"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <span class="visually-hidden">Мы в Дзене.</span>
-                      <svg width="20" height="20" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite.svg#zen"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <span class="visually-hidden">Мы в Реддит.</span>
-                      <svg width="20" height="20" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite.svg#reddit"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Одноклассниках.</span>
+                  <svg width="12" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Дзене.</span>
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#zen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Реддит.</span>
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+    </footer>  -->
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
