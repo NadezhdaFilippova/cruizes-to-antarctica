@@ -1,0 +1,91 @@
+.social__list {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    margin-left: -4px;
+  }
+}
+
+.social__item {
+  margin-left: 19px;
+
+  @include vp-1023 {
+    margin-left: 16px;
+  }
+}
+
+.social__item:first-child {
+  margin-left: 0;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  @include hover {
+    box-shadow: 0 0 2px 4px rgba(70, 130, 180, 0.8);
+
+    svg {
+      fill: rgba(70, 130, 180, 0.8);
+    }
+  }
+
+  @include focus {
+    box-shadow: 0 0 2px 4px rgba(70, 130, 180, 0.8);
+    outline: 2px solid rgba(70, 130, 180, 0.8);
+
+    svg {
+      fill: rgba(70, 130, 180, 0.8);
+    }
+  }
+
+  @include vp-1023 {
+    width: 20px;
+    height: 20px;
+
+    @include hover-focus {
+      box-shadow: none;
+
+      svg {
+        fill: $color-alice-blue;
+      }
+
+      &.focus-visible:focus {
+        box-shadow: none;
+        outline: none;
+
+        svg {
+          fill: $color-alice-blue;
+        }
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: $color-alice-blue;
+
+    @include vp-1023 {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.social__link:active {
+  opacity: 0.3;
+}

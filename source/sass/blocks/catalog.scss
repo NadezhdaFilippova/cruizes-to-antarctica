@@ -1,0 +1,88 @@
+.catalog {
+  padding: 111px 0 98px;
+
+  @include vp-1023 {
+    padding: 90px 0 103px;
+  }
+
+  @include vp-767 {
+    padding: 31px 0 67px;
+  }
+}
+
+.catalog h2 {
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    margin-top: 40px;
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+}
+
+.catalog h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 22px 30px;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 1.7rem;
+
+  @include vp-1023 {
+    margin: 0 0 27px 35px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 17px 25px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-gap: 0.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+}
+
+.catalog__item {
+  margin: 0 12px 21px;
+  position: relative;
+  cursor: pointer;
+
+  @include vp-1023 {
+    margin: 0 15px -2px;
+  }
+
+  @include hover {
+    .card__info {
+      opacity: 1;
+    }
+  }
+}
+
+.catalog__item:focus-within .card__info {
+  opacity: 1;
+}
+
+.catalog__item:active .card__info {
+  display: flex;
+}

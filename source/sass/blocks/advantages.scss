@@ -1,0 +1,162 @@
+.advantages {
+  padding: 112px 0 101px;
+  background-image: url("../img/advantages-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    padding: 90px 0 80px;
+    box-shadow: none;
+  }
+
+  @include vp-767 {
+    padding: 66px 0 0;
+    background-color: $color-alice-blue;
+    background-image: none;
+  }
+}
+
+.advantages h2 {
+  margin: 0 0 49px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages h3 {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1023 {
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+}
+
+.advantages p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.advantages__item {
+  width: 31%;
+  margin-bottom: 20px;
+  padding: 81px 15px 44px 30px;
+  background-color: $color-alice-blue;
+  position: relative;
+
+  @include vp-1023 {
+    width: 30.4%;
+    padding: 70px 16px 22px 20px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 52px 20px 50px 24px;
+  }
+}
+
+.advantages__item--zodiac h3 {
+  @include vp-1023 {
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    padding-right: 55px;
+    margin-bottom: 8px;
+  }
+}
+
+.advantages__item--all-inclusive p {
+  padding-right: 35px;
+
+  @include vp-1023 {
+    padding-right: 0;
+  }
+}
+
+.advantages__item--all-inclusive h3 {
+  @include vp-767 {
+    padding-right: 39px;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 32px;
+
+  @include vp-1023 {
+    top: 26px;
+    left: 20px;
+    height: 26px;
+  }
+
+  @include vp-767 {
+    top: 6px;
+    left: 25px;
+  }
+}
+
+.advantages__item--liner::before {
+  width: 27px;
+  background: url("../img/svg/bow-ship.svg") no-repeat center;
+  background-size: contain;
+
+  @include vp-1023 {
+    width: 21px;
+  }
+}
+
+.advantages__item--all-inclusive::before {
+  width: 38px;
+  background: url("../img/svg/ticks.svg") no-repeat center;
+  background-size: contain;
+
+  @include vp-1023 {
+    width: 27px;
+  }
+}
+
+.advantages__item--zodiac::before {
+  width: 44px;
+  background: url("../img/svg/ship.svg") no-repeat center;
+  background-size: contain;
+
+  @include vp-1023 {
+    width: 36px;
+  }
+}

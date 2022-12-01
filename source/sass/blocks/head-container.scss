@@ -5,9 +5,78 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @include vp-1023 {
     background-image: url("../img/main-back-tablet.jpg");
+    box-shadow: none;
+  }
+}
+
+@include vp-767 {
+  .head-container.is-closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .head-container.is-opened .main-nav__wrapper,
+  .head-container.no-js .main-nav__wrapper {
+    display: block;
+  }
+
+  .head-container.is-closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-alice-blue;
+    box-shadow: 0 5px 0 0 $color-alice-blue, 0 10px 0 0 $color-alice-blue;
+  }
+
+  .head-container.is-opened .main-nav__toggle {
+    top: 17px;
+    right: 7px;
+  }
+
+  .head-container.is-opened .main-nav__toggle::before,
+  .head-container.is-opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 18px;
+    height: 2px;
+    z-index: 2;
+    background-color: $color-tangaroa;
+  }
+
+  .head-container.is-opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .head-container.is-opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  .head-container.is-opened .main-header__logo,
+  .head-container.no-js .main-header__logo {
+    z-index: 12;
+    margin-left: 10vw;
+
+    svg {
+      fill: $color-tangaroa;
+    }
+  }
+
+  .head-container.no-js .main-nav__toggle {
+    display: none;
+  }
+
+  .head-container.is-opened .intro__wrapper,
+  .head-container.no-js .intro__wrapper {
+    padding-left: 10vw;
   }
 }
