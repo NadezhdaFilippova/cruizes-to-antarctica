@@ -96,3 +96,15 @@
     margin-left: 0;
   }
 }
+
+.main-footer__social {
+  max-width: 20%;
+
+  @include vp-1023 {
+    max-width: 17%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}

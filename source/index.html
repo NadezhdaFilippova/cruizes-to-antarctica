@@ -309,16 +309,16 @@
                 <ul class="booking-form__list">
                   <li class="booking-form__item">
                     <label for="user-name" class="visually-hidden">Введите ваше Имя.</label>
-                    <input name="user-name" id="user-name" type="text" placeholder="Имя" minlength="2" maxlength="25"
+                    <input name="user-name" id="user-name" type="text" placeholder="Имя" minlength="1" maxlength="50"
                       required>
                   </li>
                   <li class="booking-form__item">
                     <label for="user-phone" class="visually-hidden">Введите Ваш телефон.</label>
-                    <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,15}(\s*)" title="Используйте любой числовой формат, кроме букв" data-tel-input required>
+                    <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,15}(\s*)" title="Используйте любой числовой формат(не менее 10ти цифр), не используйте буквы" data-tel-input required>
                   </li>
                   <li class="booking-form__item">
                     <label class="visually-hidden">Введите ваш электронный адрес.</label>
-                    <input type="email" name="user-email" placeholder="Email" data-email-input required>
+                    <input type="email" name="user-email" placeholder="Email" title="До символа @ - только латинские буквы" data-email-input required>
                   </li>
                 </ul>
                 <div class="booking-form__accept">

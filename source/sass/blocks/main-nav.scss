@@ -1,5 +1,5 @@
 .main-nav {
-  width: 70%;
+  width: 90%;
 
   @include vp-1023 {
     width: 90.2%;
@@ -64,6 +64,7 @@
   font-weight: 500;
   line-height: 20px;
   color: $color-alice-blue;
+  user-select: none;
 
   @include hover {
     box-shadow: 0 0 2px 4px rgba(70, 130, 180, 0.8);
