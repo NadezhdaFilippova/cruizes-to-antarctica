@@ -687,7 +687,8 @@ button,
 }
 
 .main-nav {
-  width: 90%;
+  width: 70%;
+  max-width: 90%;
 }
 
 .main-nav__toggle {
@@ -1969,6 +1970,10 @@ button,
     padding: 20px 0;
   }
 
+  .main-header__logo {
+    padding-top: 0;
+  }
+
   .main-header__logo svg {
     width: 42px;
     height: 22px;
@@ -2042,7 +2047,7 @@ button,
   }
 
   .intro__wrapper {
-    padding: 109px 1.4% 179px;
+    padding: 114px 1.4% 179px;
   }
 
   .preamble {
