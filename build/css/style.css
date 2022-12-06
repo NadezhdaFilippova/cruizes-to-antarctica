@@ -1010,7 +1010,8 @@ button,
 }
 
 .booking {
-  padding: 50px 0;
+  padding: 50px 0 48px;
+  background-color: #87ceeb;
   background-image: url("../img/form-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1078,7 +1079,9 @@ button,
 
 .booking-form input {
   width: 100%;
-  padding: 12px 16px;
+  padding: 11px 16px;
+  font-size: 14px;
+  line-height: 21px;
   background-color: #f9fbfd;
   border: none;
 }
@@ -1089,8 +1092,6 @@ button,
 }
 
 .booking-form input:placeholder {
-  font-size: 15px;
-  line-height: 24px;
   color: rgba(1, 28, 64, 0.7);
 }
 
@@ -1164,7 +1165,7 @@ button,
 }
 
 .contacts {
-  padding: 120px 0 114px;
+  padding: 120px 0;
 }
 
 .contacts__wrapper {
@@ -1178,6 +1179,7 @@ button,
 
 .contacts__map {
   width: 48.3%;
+  height: 306px;
   background-image: url("../img/map.jpg");
   background-repeat: repeat;
   background-size: cover;
@@ -1241,7 +1243,7 @@ button,
 }
 
 .main-footer {
-  padding: 50px 0;
+  padding: 50px 0 46px;
   background-color: #011c40;
 }
 
@@ -1525,6 +1527,10 @@ button,
     padding: 25px 0;
   }
 
+  .main-header__logo {
+    padding-top: 5px;
+  }
+
   .main-header__logo svg {
     width: 38px;
     height: 20px;
@@ -1570,7 +1576,7 @@ button,
   }
 
   .intro__wrapper {
-    padding: 190px 0 277px;
+    padding: 192px 0 275px;
   }
 
   .preamble {
@@ -1692,10 +1698,6 @@ button,
   }
 
   .booking__intro {
-    margin-bottom: 52px;
-  }
-
-  .booking__intro {
     padding: 0 3px;
     margin-bottom: 52px;
   }
@@ -1709,10 +1711,6 @@ button,
     margin-bottom: 2px;
   }
 
-  .booking-form__item {
-    margin-bottom: 21px;
-  }
-
   .booking-form__btn.focus-visible:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1724,7 +1722,7 @@ button,
   }
 
   .contacts {
-    padding: 99px 0 101px;
+    padding: 99px 0 102px;
   }
 
   .contacts__map {
@@ -2032,7 +2030,7 @@ button,
   }
 
   .intro__wrapper {
-    padding: 116px 1.4% 179px;
+    padding: 114px 1.4% 179px;
   }
 
   .preamble {
@@ -2128,12 +2126,11 @@ button,
   }
 
   .booking {
-    padding: 66px 0;
+    padding: 67px 0;
   }
 
   .booking h3 {
-    margin-bottom: 14px;
-    padding-right: 5px;
+    margin-bottom: 13px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -2163,7 +2160,7 @@ button,
 
   .booking__form-wrapper p {
     padding: 0 4px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
@@ -2173,12 +2170,8 @@ button,
     margin-bottom: 0;
   }
 
-  .booking-form input {
-    padding: 11.5px 16px;
-  }
-
   .booking-form__accept {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .booking-form__control span {
@@ -2204,7 +2197,7 @@ button,
   }
 
   .contacts {
-    padding: 0 0 40px;
+    padding: 0 0 64px;
   }
 
   .contacts__wrapper {
@@ -2217,13 +2210,14 @@ button,
 
   .contacts__map {
     width: 100%;
+    height: 316px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
   .contacts__block {
-    margin-bottom: 43px;
+    margin-bottom: 37px;
     padding-top: 57px;
     width: 100%;
     -webkit-box-ordinal-group: 2;

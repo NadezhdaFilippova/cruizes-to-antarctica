@@ -35,6 +35,10 @@
 .main-header__logo {
   align-self: flex-start;
 
+  @include vp-1023 {
+    padding-top: 5px;
+  }
+
   svg {
     display: block;
     fill: $color-alice-blue;

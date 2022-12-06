@@ -1,5 +1,6 @@
 .booking {
-  padding: 50px 0;
+  padding: 50px 0 48px;
+  background-color: #87ceeb;
   background-image: url("../img/form-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 66px 0;
+    padding: 67px 0;
   }
 }
 
@@ -27,8 +28,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 14px;
-    padding-right: 5px;
+    margin-bottom: 13px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -62,10 +62,6 @@
 }
 
 .booking__intro {
-  @include vp-1023 {
-    margin-bottom: 52px;
-  }
-
   @include vp-1023 {
     padding: 0 3px;
     margin-bottom: 52px;
@@ -108,7 +104,7 @@
 
   @include vp-767 {
     padding: 0 4px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
