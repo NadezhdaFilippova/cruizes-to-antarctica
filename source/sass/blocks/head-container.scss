@@ -1,14 +1,24 @@
 .head-container {
   color: $color-alice-blue;
   background-color: $color-tangaroa;
-  background-image: url("../img/main-back-desktop.jpg");
+  background-image: image-set(
+    url("../img/main-back-desktop.webp") 1x,
+    url("../img/main-back-desktop.jpg") 1x,
+    url("../img/main-back-desktop@2x.webp") 2x,
+    url("../img/main-back-desktop@2x.jpg") 2x
+    );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @include vp-1023 {
-    background-image: url("../img/main-back-tablet.jpg");
+    background-image: image-set(
+      url("../img/main-back-tablet.webp") 1x,
+      url("../img/main-back-tablet.jpg") 1x,
+      url("../img/main-back-tablet@2x.webp") 2x,
+      url("../img/main-back-tablet@2x.jpg") 2x
+      );
     box-shadow: none;
   }
 }

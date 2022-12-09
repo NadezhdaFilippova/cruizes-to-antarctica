@@ -23,13 +23,14 @@
 .contacts__map {
   width: 48.3%;
   height: 306px;
-  background-image: url("../img/map.jpg");
+  background-image: image-set(
+    url("../img/map.webp") 1x,
+    url("../img/map.jpg") 1x,
+    url("../img/map@2x.webp") 2x,
+    url("../img/map@2x.jpg") 2x
+    );
   background-repeat: repeat;
   background-size: cover;
-
-  @include retina {
-    background-image: url("../img/map@2x.jpg");
-  }
 
   @include vp-1023 {
     width: 47.8%;
