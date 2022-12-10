@@ -641,15 +641,24 @@ button,
 }
 
 .head-container {
+  position: relative;
   color: #f9fbfd;
   background-color: #011c40;
-  background-image: -webkit-image-set(url("../img/main-back-desktop.webp") 1x, url("../img/main-back-desktop.jpg") 1x, url("../img/main-back-desktop@2x.webp") 2x, url("../img/main-back-desktop@2x.jpg") 2x);
-  background-image: image-set(url("../img/main-back-desktop.webp") 1x, url("../img/main-back-desktop.jpg") 1x, url("../img/main-back-desktop@2x.webp") 2x, url("../img/main-back-desktop@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.head-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .main-header {
@@ -751,7 +760,9 @@ button,
 }
 
 .intro__wrapper {
+  position: relative;
   padding: 169px 8.2% 277px;
+  z-index: 3;
 }
 
 .preamble {
@@ -795,12 +806,20 @@ button,
 
 .advantages {
   padding: 112px 0 101px;
-  background-image: -webkit-image-set(url("../img/advantages-back.webp") 1x, url("../img/advantages-back.jpg") 1x, url("../img/advantages-back@2x.webp") 2x, url("../img/advantages-back@2x.jpg") 2x);
-  background-image: image-set(url("../img/advantages-back.webp") 1x, url("../img/advantages-back.jpg") 1x, url("../img/advantages-back@2x.webp") 2x, url("../img/advantages-back@2x.jpg") 2x);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  background-color: #add8e6;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.advantages img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .advantages h2 {
@@ -809,6 +828,8 @@ button,
   font-size: 28px;
   line-height: 42px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .advantages h3 {
@@ -1019,10 +1040,17 @@ button,
 .booking {
   padding: 50px 0 48px;
   background-color: #87ceeb;
-  background-image: -webkit-image-set(url("../img/form-back.webp") 1x, url("../img/form-back.jpg") 1x, url("../img/form-back@2x.webp") 2x, url("../img/form-back@2x.jpg") 2x);
-  background-image: image-set(url("../img/form-back.webp") 1x, url("../img/form-back.jpg") 1x, url("../img/form-back@2x.webp") 2x, url("../img/form-back@2x.jpg") 2x);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.booking img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .booking h3 {
@@ -1049,6 +1077,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .booking__intro p {
@@ -1527,8 +1557,6 @@ button,
   }
 
   .head-container {
-    background-image: -webkit-image-set(url("../img/main-back-tablet.webp") 1x, url("../img/main-back-tablet.jpg") 1x, url("../img/main-back-tablet@2x.webp") 2x, url("../img/main-back-tablet@2x.jpg") 2x);
-    background-image: image-set(url("../img/main-back-tablet.webp") 1x, url("../img/main-back-tablet.jpg") 1x, url("../img/main-back-tablet@2x.webp") 2x, url("../img/main-back-tablet@2x.jpg") 2x);
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -2090,7 +2118,6 @@ button,
 
   .advantages {
     padding: 66px 0 0;
-    background-color: #f9fbfd;
     background-image: none;
   }
 

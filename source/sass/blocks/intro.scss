@@ -5,6 +5,7 @@
   font-size: 54px;
   line-height: 66px;
 
+
   @include vp-1023 {
     margin-bottom: 12px;
     font-size: 50px;
@@ -35,7 +36,9 @@
 }
 
 .intro__wrapper {
+  position: relative;
   padding: 169px 8.2% 277px;
+  z-index: 3;
 
   @include vp-1023 {
     padding: 192px 0 275px;
