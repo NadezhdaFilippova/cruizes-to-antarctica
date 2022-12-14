@@ -25,9 +25,58 @@
     display: none;
   }
 
-  .head-container.is-opened .main-nav__wrapper,
-  .head-container.no-js .main-nav__wrapper {
+  .head-container.is-opened .main-nav__wrapper {
     display: block;
+  }
+
+  .head-container.no-js .main-header__nav {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  .head-container.no-js .main-nav__wrapper {
+    @include vp-767 {
+      display: block;
+      position: static;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      background-color: $color-transparent;
+      overflow-y: unset;
+    }
+  }
+
+  .head-container.no-js .main-nav {
+    @include vp-767 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .head-container.no-js .main-nav__logo {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  .head-container.no-js .main-nav__list {
+    @include vp-767 {
+      margin-top: 0;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      a {
+        padding: 8px 10px;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-alice-blue;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
   }
 
   .head-container.is-closed .main-nav__toggle::before {
@@ -68,22 +117,32 @@
     box-shadow: none;
   }
 
-  .head-container.is-opened .main-header__logo,
-  .head-container.no-js .main-header__logo {
-    z-index: 12;
-    margin-left: 10vw;
-
-    svg {
-      fill: $color-tangaroa;
-    }
+  .head-container.is-opened .main-header__logo {
+    display: none;
   }
 
   .head-container.no-js .main-nav__toggle {
     display: none;
   }
 
-  .head-container.is-opened .intro__wrapper,
-  .head-container.no-js .intro__wrapper {
+  .head-container.is-opened .intro__wrapper {
     padding-left: 10vw;
+  }
+
+  .head-container.no-js .intro__wrapper {
+    padding-left: 1.4%;
+  }
+}
+
+.head-container.is-opened .main-header__nav::after {
+  @include vp-767 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 43, 102, 0.5);
+    content: "";
   }
 }

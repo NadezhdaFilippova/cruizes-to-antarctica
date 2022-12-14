@@ -59,6 +59,8 @@
 .contacts__block {
   width: 43.1%;
   padding-top: 76px;
+  display: flex;
+  flex-direction: column;
 
   @include vp-1023 {
     width: 48%;
