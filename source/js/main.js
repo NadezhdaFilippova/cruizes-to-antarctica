@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {onNavToggle} from './modules/open-menu';
-import './modules/tel-validate';
+import {onTelInput} from './modules/tel-validate';
 
 // ---------------------------------
 
@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     onNavToggle();
+    onTelInput();
   });
 });
 
